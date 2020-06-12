@@ -1,0 +1,9 @@
+[
+	{
+		"id": "TC101",
+		"data": {
+			"description": "Upload a valid file",	
+			"pathparamter" : "/v2/account"
+		}
+	}
+	]
