@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" verbose="5" parallel="tests" thread-count="1">
+
+	<listeners>
+	    <listener class-name="com.projectname.base.AnnotationTransformer" />
+		<listener class-name="com.projectname.base.Retry" />
+	</listeners>
+	
+	
+
+ 
+<parameter name="environment" value="${environment}" />
+<!--  <parameter name="environment" value="QA" />   -->
+  
+<test name="Upload a valid  file">
+   <classes>
+	     <class name="com.projectname.apitesting.classname">
+		  <methods>
+		  	<include name="newUserRegistrationWithRegistratedEmail">                                               
+					<parameter name="testcaseid" value="TC01" />
+			</include>		
+		   </methods>
+	  </class>  
+  </classes>  
+  </test>  
+  
+    
+      
+</suite> <!-- Suite -->
